@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: Arial, sans-serif; /* Cambiar según tus preferencias */
+}
+
+/* Contenedor principal del reproductor */
+.player {
+    height: 100vh; /* Utiliza toda la altura de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Envoltura interna del reproductor */
+.wrapper {
+    border: 1px solid transparent;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    max-width: 80%; /* Limita el ancho máximo */
+}
+
+/* Detalles de la canción */
+.details {
+    text-align: center; /* Centra el contenido */
+}
+
+/* Arte de la pista */
+.track-art {
+    margin: 10px auto; /* Margen automático en los lados para centrar */
+    max-width: 100%; /* Imagen de la pista se ajusta al ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente según el ancho */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 6px 5px #ccc;
+}
+
+/* Nombres de la pista y del artista */
+.now-playing,
+.track-name,
+.track-artist {
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Contenedor de los botones */
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Envuelve los botones en múltiples líneas si es necesario */
+    justify-content: center;
+}
+
+/* Botones */
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 15px; /* Reduce el espacio entre los botones */
+    margin: 5px; /* Espaciado entre los botones */
+    opacity: .8;
+    transition: opacity .2s;
+}
+
+/* Barras de deslizamiento */
+.slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; /* Espacio superior */
+}
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #83a9ff;
+    -webkit-animation: .2s;
+    transition: opacity .2s;
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* Contenedor de tiempo actual y duración total */
+.current-time,
+.total-duration {
+    flex: 0 0 auto; /* No cambia el tamaño y se ajusta automáticamente al contenido */
+    padding: 0 10px; /* Espaciado interno */
+}
+
+/* Iconos de volumen */
+i.fa-volume-down,
+i.fa-volume-off,
+i.fa-volume-mute,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px; /* Reduzca el espaciado izquierdo */
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+/* Icono de menú */
+.menuIcon {
+    width: 40px; /* Tamaño del icono */
+    height: 40px;
+    opacity: .5;
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}
+
+/* Icono de inicio */
+.homeIconCont {
+    opacity: .5;
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}

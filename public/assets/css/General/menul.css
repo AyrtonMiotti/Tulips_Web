@@ -1,0 +1,314 @@
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    height: 100px;
+    width: 100%;
+    /*position: fixed;*/
+    z-index: 2;
+    top: 0;
+}
+
+.menuIcon{
+    width: 72px;
+    height: 72px;
+    opacity: .5;
+}
+
+.homeIconCont{
+    opacity: .5;
+}
+
+.homeIconCont:hover{
+    opacity: 1;
+}
+
+
+/*MENU LATERAL DESPLEGABLE*/
+.navbar{
+    opacity: .8;
+}
+.menubar{
+    width: 10%;
+    text-decoration: none;
+    z-index: 3;
+    margin-top: auto;
+    transition: .4s all;
+}
+
+.menubar ul{
+    padding: 0px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.menubar li{
+    transition: .3s all;
+    list-style: none;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.menubar a{
+    text-decoration: none;
+    list-style: none;
+
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.menubar h2{
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.menubar:hover{
+    width: 30%;
+    height: 99vh;
+
+    margin-top: auto;
+    opacity: 1;
+    border-left: 1px solid black;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.43);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(19.5px);
+    -webkit-backdrop-filter: blur(19.5px);
+    border: 1px solid rgba(0, 0, 0, 0.47);
+    font-family: "Dancing Script", cursive;
+}
+
+.menubar:hover h2{
+    padding: 15px;
+    font-size: 40px;
+}
+
+.menubar:hover  a{
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    padding: 20px;
+}
+
+.menubar:hover img{
+    height: 0px;
+}
+
+.menubar:hover li{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.menubar:hover  ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+
+.menubar:hover a:hover{
+    font-size: 30px;
+    padding: 20px 0px;
+    background-color: rgba(22, 78, 112, .98);
+}
+
+@media only screen and (max-width: 400px) {
+      .navbar{
+        width: 100px;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+    .navbar{
+        max-width: 60%;
+        max-height: 50px;
+        margin: 0 auto;
+        display: flex; /* Usar flexbox para alinear elementos */
+        justify-content: space-between; /* Alinear los elementos horizontalmente */
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .navbar li {
+        margin: 0 10px; /* Márgenes entre elementos */
+    }
+
+    .menuIcon{
+        position: fixed;
+        background-color: #fff;
+        top: 7px;
+        right: 7px;
+        width: 50px;
+        height: 50px;
+        opacity: .9;
+        border: 3px solid #fa00c4;
+        border-radius: 50%;
+    }
+
+    .homeIcon{
+        width: 60px;
+        height: 60px;
+    }
+
+    .MenuTitle, .menuUl{
+        overflow: hidden;
+    }
+
+    .menuUl {
+        overflow: hidden;
+    }
+ 
+    .menubar {
+        position: fixed;
+        top: 2px;
+        right: 2px;
+        height: auto;
+        background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el botón */
+        background-position: center; /* Centra la imagen dentro del botón */
+        opacity: 0.5; /* Opacidad del botón */
+        transition: opacity 0.3s; /* Transición suave para la opacidad */
+    }
+
+    .menubar:hover {
+        opacity: 1; /* Ajusta la opacidad cuando el mouse está sobre el botón */
+        text-align: center;
+    }
+
+    .menubar:hover h2 {
+    padding: 15px;
+    font-size: 30px;
+    }
+
+    .menubar:hover a {
+        font-size: 15px;
+        color: #fff;
+        display: block;
+        padding: 20px;
+    }
+
+    .navbar li {
+        margin: 0px;
+    }
+
+    .menubar:hover {
+        position: fixed;
+        z-index: 9999; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+      width: 100px;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      
+  }
+
+  .navbar{
+      max-width: 60%;
+      max-height: 50px;
+      margin: 0 auto;
+      display: flex; /* Usar flexbox para alinear elementos */
+      justify-content: space-between; /* Alinear los elementos horizontalmente */
+      align-items: center;
+      position: absolute;
+      top: 10px;
+  }
+  .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  .navbar li {
+      margin: 0 10px; /* Márgenes entre elementos */
+  }
+
+  .menuIcon{
+      position: fixed;
+      background-color: #fff;
+      top: 7px;
+      right: 7px;
+      width: 50px;
+      height: 50px;
+      opacity: .9;
+      border: 3px solid #fa00c4;
+      border-radius: 50%;
+  }
+
+  .homeIcon{
+      width: 60px;
+      height: 60px;
+  }
+
+  .MenuTitle, .menuUl{
+      overflow: hidden;
+  }
+
+  .menuUl {
+      overflow: hidden;
+  }
+
+  .menubar {
+      position: fixed;
+      top: 2px;
+      right: 2px;
+      height: auto;
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el botón */
+      background-position: center; /* Centra la imagen dentro del botón */
+      opacity: 0.5; /* Opacidad del botón */
+      transition: opacity 0.3s; /* Transición suave para la opacidad */
+  }
+
+  .menubar:hover {
+      opacity: 1; /* Ajusta la opacidad cuando el mouse está sobre el botón */
+      text-align: center;
+  }
+
+  .menubar:hover h2 {
+  padding: 15px;
+  font-size: 30px;
+  }
+
+  .menubar:hover a {
+      font-size: 15px;
+      color: #fff;
+      display: block;
+      padding: 20px;
+  }
+
+  .navbar li {
+      margin: 0px;
+  }
+
+  .menubar:hover {
+      position: fixed; /* o position: absolute; dependiendo de tu diseño */
+      z-index: 9999; /* Un valor alto para asegurar que esté por encima de otros elementos */
+      /* Otros estilos del menú */
+  }
+}
