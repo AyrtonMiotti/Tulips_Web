@@ -984,3 +984,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+.navbar {
+  position: fixed;
+}
