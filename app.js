@@ -51,3 +51,8 @@ app.listen(3309, (req, res)=>{
 // Agregar el boton info para saber el día exacto Swett Alert?? 
 // Guardar en la Base de datos las canciones. La ultima q se escuchó y reanudar ahí.
 // Modificar el menú lateral para que ahí muestre las cancionnes (todas)
+
+// COMANDOS GIT
+// status: para ver qué se modificó
+// git add . para preparar
+// commit: sube.... --> git commit -m "Nombre_de_merge"
