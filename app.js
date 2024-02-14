@@ -56,3 +56,4 @@ app.listen(3309, (req, res)=>{
 // status: para ver qué se modificó
 // git add . para preparar
 // commit: sube.... --> git commit -m "Nombre_de_merge"
+//git commit -m "Resolve merge conflict"

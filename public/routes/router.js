@@ -35,6 +35,15 @@ router.get('/firefly', (req, res)=>{
     return res.render('firefly');
 })
 
+router.get('/bitacora', (req, res)=>{
+    return res.render('podcast');
+})
+
+router.get('/songlist', (req, res)=>{
+    return res.render('list');
+})
+
+
 // Functions
 router.post("/logIn", partController.login);
 router.post('/charge', chargeJson.charge);
