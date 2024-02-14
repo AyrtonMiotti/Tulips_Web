@@ -31,6 +31,10 @@ router.get('/poemas', (req, res)=>{
     return res.render('poemas');
 })
 
+router.get('/firefly', (req, res)=>{
+    return res.render('firefly');
+})
+
 // Functions
 router.post("/logIn", partController.login);
 router.post('/charge', chargeJson.charge);
