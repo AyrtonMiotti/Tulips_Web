@@ -1,7 +1,7 @@
 const {urlencoded} = require('express');
 const express = require('express');
 const app = express();
-
+ 
   
 // 1-Middlewares 
 app.use(express.urlencoded({extended:false}));
