@@ -31,7 +31,7 @@ app.use('/', partRoutes);
 //____________________________________________________________
 
  
-app.listen(3309, (req, res)=>{
+app.listen(3310, (req, res)=>{
     console.log("");
     console.log("-------------------------------------------");
     console.log("SERVER RUNNING IN http://localhost:3310");
@@ -43,7 +43,10 @@ app.listen(3309, (req, res)=>{
 // https://www.solumedia.com.ar/radios/8682/index.html pagina radio 
 //http://localhost/phpmyadmin 
 
-// sudo /opt/lampp/lampp start
+/* sudo /opt/lampp/lampp start
+estudiante
+*/
+
 //sudo /opt/lampp/lampp stop
 
 

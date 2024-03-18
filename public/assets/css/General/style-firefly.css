@@ -1,24 +1,26 @@
 html, body {
     height: 100%;
   }
-  
+  /*clase para reducir el tamaño del html al de un celular*/ 
+
   body {
-    background-image: url('/resources/assets/images/fireImages/FondoP.jpg');
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
   }
   
   .firefly {
     position: fixed;
     left: 50%;
     top: 50%;
-    width: 0.4vw;
-    height: 0.4vw;
+    width: 1vw;
+    height: 1vw;
     margin: -0.2vw 0 0 9.8vw;
     animation: ease 200s alternate infinite;
     pointer-events: none;
+    
   }
   .firefly::before, .firefly::after {
     content: "";
@@ -1297,10 +1299,3 @@ html, body {
       box-shadow: 0 0 2vw 0.4vw yellow;
     }
   }
-  
-@media only screen and (max-width: 600px) {
-  .firefly {
-    width: 100vh;
-    height: 100vh;
-  }
-}
