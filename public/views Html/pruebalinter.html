@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movimiento Aleatorio de Divs</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    #fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: wheat no-repeat center center fixed;
+        background-size: cover;
+        z-index: 100;
+    }
+    .linterna {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: url('resources/assets/images/linternas/linterna1.png') no-repeat center center;
+        background-size: contain;
+        z-index: 1;
+    }
+</style>https://www.youtube.com/watch?v=FAF6iy2eUyw
+</head>
+<body>
+<div id="fondo"></div>
+<script>
+    function getRandomPosition() {
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+        var randomX = Math.floor(Math.random() * windowWidth);
+        var randomY = Math.floor(Math.random() * windowHeight);
+        return [randomX, randomY];
+    }
+
+    function createLinternas() {
+        var numLinternas = 10; // Cambia este valor según la cantidad deseada de linternas
+        var fondo = document.getElementById('fondo');
+        for (var i = 0; i < numLinternas; i++) {
+            var linternas = document.createElement('div');
+            linternas.className = 'linterna';
+            fondo.appendChild(linternas);
+        }
+    }
+
+    function moveDiv() {
+        var divs = document.getElementsByClassName('linterna');
+        for (var i = 0; i < divs.length; i++) {
+            var newPosition = getRandomPosition();
+            divs[i].style.top = newPosition[1] + 'px';
+            divs[i].style.left = newPosition[0] + 'px';
+        }
+    }
+
+    createLinternas(); // Crear linternas al cargar la página
+    setInterval(moveDiv, 1000); // Cambiar la posición de los divs cada segundo
+</script>
+</body>
+</html>

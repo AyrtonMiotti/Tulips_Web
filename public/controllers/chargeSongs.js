@@ -32,6 +32,9 @@ chargeJson.charge = (req, res) => {
         console.error('Error al crear la tabla:', error);
         return;
     }
+    else{
+      console.log("Tabla creada correctamente.")
+    }
 
     // Insertar datos en la tabla
     const insertarSQL = 'INSERT INTO canciones (img, name, artist, music) VALUES ?';

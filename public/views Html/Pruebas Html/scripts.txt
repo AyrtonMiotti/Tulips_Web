@@ -1,0 +1,34 @@
+Objetivo: Pagina web con elementos flotantes.
+
+La Pagina Web debe tener el siguiente formato: 
+```
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lanterns</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<body>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+<div class="lantern"></div>
+
+</body>
+</html>
+
+```
+
+Cada linterna (div class="lantern")

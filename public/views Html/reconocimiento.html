@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script>
+        if(annyang){
+            var comando = {
+                "flor que da fulgor":function(){console.log("Paso  1")},
+                "con tu brillo fiel":function(){console.log("Paso  2")},
+                "vuelve el tiempo atras":function(){console.log("Paso  3")},
+                "voliendo ":function(){console.log("Paso  4")},
+                "a lo":function(){console.log("Paso  5")},
+                "que fue":function(){console.log("Paso  6")}
+            }
+            annyang.setLanguage("es-MX");
+            annyang.addCommands(comando);
+            annyang.debug();
+            annyang.start({continuous:false});
+
+        }
+    </script>
+</body>
+</html>

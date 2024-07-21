@@ -1,4 +1,4 @@
-/*DROP DATABASE if_exist Tulips;
+DROP DATABASE if_exist Tulips;
 CREATE DATABASE if_not_exists Tulips;
 USE Tulips;
 
@@ -8,4 +8,4 @@ CREATE TABLE CancionesEnReproduccion (
     nombre VARCHAR(255) NOT NULL,
     artista VARCHAR(255) NOT NULL,
     ruta VARCHAR(255) NOT NULL
-);*/
+);

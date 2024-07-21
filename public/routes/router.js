@@ -43,6 +43,9 @@ router.get('/songlist', (req, res)=>{
     return res.render('list');
 })
 
+router.get('/prueba', (req, res)=>{
+    return res.render('pruebaR');
+})
 
 // Functions
 router.post("/logIn", partController.login);
