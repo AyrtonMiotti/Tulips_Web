@@ -39,11 +39,11 @@ router.get('/bitacora', (req, res)=>{
     return res.render('podcast');
 })
 
-router.get('/songlist', (req, res)=>{
+router.get('/prueba', (req, res)=>{
     return res.render('list');
 })
 
-router.get('/prueba', (req, res)=>{
+router.get('/songlist', (req, res)=>{
     return res.render('pruebaR');
 })
 
